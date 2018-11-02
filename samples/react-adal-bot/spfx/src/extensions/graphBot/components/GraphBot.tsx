@@ -15,11 +15,6 @@ import { PnPClientStorage } from "@pnp/common";
 import { Util } from "@pnp/common";
 import { Logger } from "@pnp/logging";
 
-// Add your scopes according the graph queries you want to perfrom
-// Use the Microsoft Graph explorer/documentation to see required permissions by queries 
-// (https://developer.microsoft.com/en-us/graph/graph-explorer)
-const scopes = ["Directory.Read.All","User.Read"];
-
 class GraphBot extends React.Component<IGraphBotProps, IGraphBotState> {
 
     private _botConnection: DirectLine;
